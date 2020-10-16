@@ -1,17 +1,30 @@
-# Information on using github for the collection of eo4geo training material content 
+# FOUNDAMENTS OF OPTICAL REMOTE SENSING
 
-The following guidelines apply to eo4geo partners who contribute training material content on the basis of the Reveal JS template: 
+Slides: https://eo4geocourses.github.io/UNIBAS_Remote-Sensing-Environment/ 
 
-* <strong>To create your own training material </strong> deriving from the EO4GEO_RevealTemplate, follow the instructions below:
-   1.  Specify your GitHub Account or email in the T4.3 Training Material Speadsheet. Please put the account names of all persons who should be added to the repository in the according field, seperated by a comma.
-   2. A repository containing the "reveal template" will be made available to you ASAP. Within this repository, you can commit and manage your own contributions.
-   3. To check your progress and see a hosted version of your material, you can use GitHub Pages by going to settings -> Scroll down to GitHub Pages -> Choose "Master" as Source. Please note that it might take several minutes until changes you have made are rolled out to GitHub Pages. It is also advisable to check regularily if the hosting of the html works without issue on GitHub Pages. Small bugs or inconsitencies might not cause problems on your local machine, but cause severe issues as soon as the hmtl is hosted via the internet.
-   4. Images used in the slides are to be hosted on the eo4geo.sbg.ac.at file hosting server and referenced in the HTML code by link only. To upload images and receive a permalink to said images, use a SFTP/SSH Client like FileZilla and get into contact with simon.donike@sbg.ac.at to be provided with the login information.
-  
-* One repository for every entry on the T4.3 Training Material List is created, meaning one seperate slideshow for every "unit". If you want to combine several units to one repository, please contact simon.donike@sbg.ac.at
-* The template might be issue to updates and fixes. If this is the case, these changes will not be rolled out to your repository automatically. You can check if a merge via GitHub is possible without interference, but otherwise the adaptations need to be made in your repository manually. 
-* If you consider particular changes/adaptions to the template are necessary or advisable, please get in contact with PLUS.
-* <strong> Information on How-To Use Reveal and a channel for Q&A about the use of Reveal JS can be found in the folowing Slack channel: wp4_reveal_question_and_answer https://app.slack.com/client/T8X5JBEFJ/G015RL4SSUW  </strong>
-* In case of any confusion or problems with GitHub, feel free to contact simon.donike@sbg.ac.at
+## Abstract
 
-
+## Table of Contents
+1) em radiation and radiometric measurements
+2) Blackbody Radiation
+3) Rayleigh-Jeans approssimation 
+4) Wien's Law
+5) Matter/Radiation interaction 
+6) Kirchoff Law 
+7) Matter/Radiation interaction in the visible range
+8) Spectral measurements, spectral signatures of soil, water, vegetation
+9) Interpretation of vegetations spectral signatures
+10) NDVI index 
+11) Atomic Spectroscopy
+12) Basic principles of multi-spectral remote sensing;
+13) From ground to space: sensor acquisition and digital image formation, EO sensors
+14) Natural sources of radiation for EO: the Sun and the Earth
+15) Passive and Active Earth Observing Techniques
+16) Interaction between radiation and atmosphere
+17) Chemical-physical properties of atmosphere 
+18) Scattering in the atmosphere
+19) Extinction of solar radiation in the atmosphere
+20) Atmospheric transmittance and atmospheric windows
+21) Penetration of e.m. radiation into the matter
+22) A Remote Sensing application: sediments or shallow water?
+23) Cloud detection</span>
