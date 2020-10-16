@@ -3,6 +3,7 @@
 Slides: https://eo4geocourses.github.io/UNIBAS_Remote-Sensing-Environment/ 
 
 ## Abstract
+This is a module on Physical Principles which are the basis of any Remote Sensing application.
 
 ## Table of Contents
 1) em radiation and radiometric measurements
