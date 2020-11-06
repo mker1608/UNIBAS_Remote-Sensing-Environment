@@ -3,7 +3,7 @@
 Slides: https://eo4geocourses.github.io/UNIBAS_Remote-Sensing-Environment/ 
 
 ## Abstract
-This course contains the basic elements of Earth observation from space, dealing with the basic physical principles, technologies and methodologies used. The main objective of the course is to provide students with the foundations for studying the processes and environmental parameters with space technologies.
+This module contains the basic elements of Earth observation from space, dealing with the basic physical principles, technologies and methodologies used. The main objective of the course is to provide students with the foundations for studying the processes and environmental parameters with space technologies.
 
 ## Table of Contents
 1) em radiation and radiometric measurements
