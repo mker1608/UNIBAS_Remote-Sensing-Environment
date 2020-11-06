@@ -1,4 +1,4 @@
-# FOUNDAMENTS OF OPTICAL REMOTE SENSING
+# FUNDAMENTS OF OPTICAL REMOTE SENSING
 
 Slides: https://eo4geocourses.github.io/UNIBAS_Remote-Sensing-Environment/ 
 
