@@ -382,11 +382,13 @@
 							<td>
 								<span>Ex: Sun Exitance for a Sun radius \(R = 7 \times 10^8m\)</span>
 								<br/><br/>
+								<!--
 								<span>\(3.90 \times 10^{26}\)</span>
 								<br/><br/>
 								<span>\(F(Sun) = \)_____________\( = 6.34 \times 10^7 W m^{-2}\)</span>
 								<br/><br/>
-								<span>\(4\pi (7 \times 10^8)^2\)</span>
+								<span>\(4\pi (7 \times 10^8)^2\)</span>-->
+								<span>\(F(Sun) = \frac{3.90 \times 10^{26}}{4\pi (7 \times 10^8)^2} = 6.34 \times 10^7 W m^{-2}\)</span> <!--Revision 1-->
 							</td>
 						</tr>
 						<tr>
@@ -1092,8 +1094,140 @@
 						<br/>
 						<li style="text-align:left; font-size:40px; font-weight:bold; float:left; color:black; font-family:Roboto Slab, sans-serif;">
 							TUTORIAL <br/><br/><br/>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NDVI <br/>
+							<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NDVI <br/>-->
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on NDVI computation and applications <br/><!--Revision 2-->
 						</li>
+					</section>
+					<section> <!--Revision 3-->
+						<br/>
+						<h3 style="color:#2D5595; font-weight:bold; float:center;">Example of NDVI reduction after fires</h3>
+						<img class="myimage" width="90%" data-src="resources\images\tutorial_NDVI_1.png">
+						<h5 style="font-weight:bold; float:center; margin-top:-42%;">High <br/> NDVI</h5>
+						<h5 style="font-weight:bold; float:center; margin-top:13%;">Mid</h5>
+						<h5 style="font-weight:bold; float:center; margin-top:15%;">Low</h5>
+						<table border="1" width="90%" style="font-size:70%;">
+							<tr style="background-color:#bfc0c0;">
+								<th style="text-align:left;"><span style="color:red;">Burned Areas</span></th>
+								<th style="text-align:center;"><span style="color:red;">Wooded (ha)</span></th>
+								<th style="text-align:center;"><span style="color:red;">Mixed Covers (ha)</span></th>
+							</tr>
+							<tr>
+									<td style="text-align:left">A - Motta S.Giovanni e Melito di Porto Salvo</td>
+									<td style="text-align:center">141</td>
+									<td style="text-align:center">3320</td>
+							</tr>
+							<tr>
+									<td style="text-align:left">B - Bova e Bova Marina</td>
+									<td style="text-align:center">3600</td>
+									<td style="text-align:center">3300</td>
+							</tr>
+							<tr>
+									<td style="text-align:left">C - Grotteria e Roccella Ionica</td>
+									<td style="text-align:center">1150</td>
+									<td style="text-align:center">2413</td>
+							</tr>
+							<tr>
+									<td style="text-align:left">D - Bivongi</td>
+									<td style="text-align:center">500</td>
+									<td style="text-align:center">1000</td>
+							</tr>
+						</table>
+					</section>
+					<section> <!--Revision 4-->
+						<h2 style="color:#2D5595; font-weight:bold; float:center;">Applications</h2>
+						<h3 style="color:#2D5595; font-weight:bold; float:left; margin-left:10%;">Vegetation (Normalised Difference Vegetation Index)</h3>
+						<br/>
+						<span style="font-size:30px; font-weight:bold; float:center;">\(\bbox[15px, yellow]{NDVI = \frac{R_{NIR}-R_{VIS}}{R_{NIR} + R_{VIS}}}\)</span>
+						<br/>
+						<h3 style="color:#2D5595; font-weight:bold; float:left; margin-left:10%;">Problems?</h3>
+						<br/>
+						<h3 style="font-weight:bold; float:left; margin-left:10%;">Clouds, Atmospheric Effects, View Angle Effects</h3>
+						<br/>
+						<h3 style="color:#2D5595; font-weight:bold; float:left; margin-left:10%;">Solution?</h3>
+						<br/><br/><br/>					
+						<h3 style="font-weight:bold; float:left; margin-left:-14.25%; margin-top:1.75%;">Maximum Value Composite (MVC)</h3>
+						<br/><br/>
+						<div style="margin-left:-10%;">
+							<div>
+								<img class="myimage" width="18%" style="margin-left:-80%;" data-src="resources\images\tutorial_NDVI_2.png">
+								<span style="font-size:60%; font-weight:bold; position:absolute; margin-left:-2%; margin-top:1.4%;">1</span>
+								<img class="myimage" width="18%" style="margin-left:-17%; margin-bottom:-0.25%;" data-src="resources\images\tutorial_NDVI_2.png">
+								<span style="font-size:60%; font-weight:bold; position:absolute; margin-left:-2%; margin-top:3.4%;">2</span>
+								<img class="myimage" width="18%" style="margin-left:-17%; margin-bottom:-2.15%;" data-src="resources\images\tutorial_NDVI_2.png">
+								<span style="font-size:60%; font-weight:bold; position:absolute; margin-left:-2%; margin-top:5.4%;">3</span>
+								<img class="myimage" width="18%" style="margin-left:-17%; margin-bottom:-4.0%;" data-src="resources\images\tutorial_NDVI_2.png">
+								<span style="font-size:60%; font-weight:bold; position:absolute; margin-left:-2%; margin-top:7.4%;">4</span>
+								<img class="myimage" width="18%" style="margin-left:-17%; margin-bottom:-5.8%;" data-src="resources\images\tutorial_NDVI_2.png">
+								<span style="font-size:60%; font-weight:bold; position:absolute; margin-left:-1.5%; margin-top:9.4%;">5</span>
+							</div>
+							<div style="margin-top:-12.85%; margin-left:60%;">
+								<table width="100%">
+									<tr>
+										<td><img class="myimage" width="63%" class="myimage" data-src="resources\images\down-arrow.png" style="transform: rotate(-90deg);"></td>
+										<td><img class="myimage" width="63%" data-src="resources\images\tutorial_NDVI_2.png"></td>
+									</tr>
+								</table>
+								<span style="font-size:60%; font-weight:bold; position:absolute; margin-left:-1.6%; margin-top:-20.5%;">MAX (1,2,3,4,5)</span>
+							</div>
+						<div>
+					</section>
+					<section> <!--Revision 5-->
+						<h2 style="color:#2D5595; font-weight:bold; float:center;">SEASONAL CHANGE AT REGIONAL SCALE</h2>
+						<img class="myimage" width="40%" data-src="resources\images\tutorial_NDVI_3.png">
+						<img class="myimage" width="39.6%" data-src="resources\images\tutorial_NDVI_3a.png">
+						<br/>
+						<span style="font-size:85%; border-style:solid; border-color:black; border-width:thin; font-weight:bold; float:left; margin-left:17.5%;">&nbsp JUNE &nbsp </span>
+						<span style="font-size:85%; border-style:solid; border-width:thin; border-color:black; font-weight:bold; float:right; margin-right:20%;">&nbsp NOVEMBER &nbsp </span>
+						<br/>
+						<img class="myimage" style="margin-right:-1.5%; width:750px; height:30px; margin-top:-0.27%;" data-src="resources\images\tutorial_NDVI_4.png">
+						<br>
+						<div style="margin-top:-2%;">
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:15.5%;">CLOUDS 0.0</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:7.5%;">0.15</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:7.3%;">0.25</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:7.1%;">0.35</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:7.0%;">0.45</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:7.1%;">0.55</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:7.0%;">0.60</span>
+							<span style="font-size:50%; font-weight:bold; float:left; margin-left:8.0%;">0.70</span>
+						</div>
+						<br/>
+						<span style="font-size:30px; font-weight:bold; float:center; margin-left:30%;">\(\bbox[15px, yellow]{NDVI = \frac{R_{NIR}-R_{VIS}}{R_{NIR} + R_{VIS}}}\)</span>
+					</section>
+					<section> <!--Revision 6-->
+						<h2 style="color:#2D5595; font-weight:bold; float:center;">Applications</h2>
+						<h3 style="color:#2D5595; font-weight:bold; float:center;">Vegetation (Normalized Difference Vegetation Index</h3>
+						<br/>
+						<h3 style="color:#2D5595; font-weight:bold; float:center;">MONITORING OF DEFORESTATION</h3>
+						<div style="display:inline-block;">
+							<span style="font-size:30px; font-weight:bold; float:left; margin-left:-15%; margin-top:25%;">\(\bbox[15px, yellow]{NDVI = \frac{R_{NIR}-R_{VIS}}{R_{NIR} + R_{VIS}}}\)</span>
+							<img class="myimage" style="float:right; margin-right:-20%;" width="75%" data-src="resources\images\tutorial_NDVI_5.png">
+						</div>
+					</section>
+					<section> <!--Revision 7-->
+						<h2 style="color:#2D5595; font-weight:bold; float:center;">Applications</h2>
+						<h3 style="color:#2D5595; font-weight:bold; float:center;">Vegetation (Normalized Difference Vegetation Index)</h3>
+						<h3 style="color:#2D5595; font-weight:bold; float:center;">MONITORING OF DESERTIFICATION</h3>
+						<div style="display:inline-block;">
+							<img class="myimage" style="float:left; margin-left:-7.5%; margin-top:-2.0%;" width="73%" data-src="resources\images\tutorial_NDVI_6.png">
+							<span style="float:right; text-align:left; margin-right:-5%; margin-top:27.5%;">From the analysis <br/> of long (ten-year) time <br/> series of NDVI </span>
+						</div>
+					</section>
+					<section> <!--Revision 8-->
+						<h3 style="color:#2D5595; font-weight:bold; float:center;">Seasonal change at continental scale</h3>
+						<div style="display:inline-block;">
+							<div style="float:left; font-weight:bold; margin-left:-20%; margin-top:20%;">
+								<p style="text-align:left;">
+									A. April 12-May 2, 1982;<br/>
+									B. B. July 5-25, '82;<br/>
+									C. Sept. 27-Oct. 17, '82;<br/>
+									D. Dec. 20, '82-Jan. 9, '83<br/>
+								</p>
+								<br/>
+								<span style="font-size:26px; font-weight:bold; float:left;">\(\bbox[15px, yellow]{NDVI = \frac{R_{NIR}-R_{VIS}}{R_{NIR} + R_{VIS}}}\)</span>
+							</div>
+							<img class="myimage" style="float:right; margin-right:-20%;" width="85%" data-src="resources\images\tutorial_NDVI_7.png">
+						</div>
 					</section>
 				</section>
 				
@@ -1575,16 +1709,19 @@
 				</section>
 				
 				<!-- AUTHORS: CREATE YOUR LIST OF REFERENCES HERE: -->
-				<!--
-				<section> 
-				<h2> Reference list </h2>
-				<br>
-				<reference_list>exemplary doi:<br><br>
-				Barbara Hofer (2018). Innovation in geoprocessing for a Digital Earth. International Journal in Digital Earth.
-				<br>
-				<a href="https://doi.org/10.1080/17538947.2017.1379154">10.1080/17538947.2017.1379154</a>
-				</reference_list>
-				</section>-->
+				<section> <!-- Revision 9-->
+					<h2> Reference list </h2>
+					<br>
+					<reference_list>
+					K. N. Liou  An Introduction to Atmospheric Radiation  – Academic Press (2002, 1980)
+					<br>
+					R. P. Gupta Remote Sensing Geology, Springer & Verlag, (1991). 
+					<br>
+					W.G. Rees, Physical Principles of Remote Sensing, Cambridge University Press (1990) 
+					<br>
+					Il telerilevamento da aereo e da satellite libro Brivio P. A. (cur.)  Lechi G. M. (cur.)  Zilioli E. (cur.) edizioni Delfino Carlo Editore collana Scienza & tecnica , 1992
+					</reference_list>
+				</section>
 				
 				
 				<section>Slide show ends</section> <!-- Slide 86-->
